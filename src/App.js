@@ -161,9 +161,9 @@ function App() {
           
           <tbody>
           <tr>
-              <th>Name of Appliance</th>
-              <th>watts</th>
-              <th>Number of Hours</th>
+              <th>APPLIANCE</th>
+              <th>WATTS</th>
+              <th>HOURS</th>
             </tr>
             {
               devices.map(device =>

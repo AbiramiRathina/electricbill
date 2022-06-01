@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+  
+  table {
+  border: 2px solid forestgreen;
+  width: 800px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  th {
+  border-bottom: 1px solid black;
+  }
+  
+  td {
+  text-align: center;
+  }
+  
