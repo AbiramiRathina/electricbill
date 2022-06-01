@@ -128,6 +128,7 @@ function App() {
             />
 
             <button onClick={createTodo}>add device</button>
+            <button onClick={updateTodo}>update device</button>
           </div>
         ) : (
 
@@ -150,7 +151,7 @@ function App() {
               value={edit.hours}
             />
 
-            <button onClick={updateTodo}>update device</button>
+            
           </div>
 
         )}

@@ -40,9 +40,10 @@
 
   
   table {
+    margin-left: 24%;
   border: 2px solid forestgreen;
   width: 800px;
-  height: 200px;
+  height: wrap;
   justify-content: center;
   align-items: center;
   }
@@ -53,5 +54,6 @@
   
   td {
   text-align: center;
+  flexWrap: wrap;
   }
   
