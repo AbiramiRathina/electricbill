@@ -128,7 +128,7 @@ function App() {
             />
 
             <button onClick={createTodo}>add device</button>
-            <button onClick={updateTodo}>update device</button>
+            
           </div>
         ) : (
 
@@ -174,7 +174,7 @@ function App() {
                     <td>{device.hours}</td>
                     
                     <button onClick={() => deleteTodo(device)}>Remove</button>
-  
+                    <button onClick={updateTodo}>update device</button>
                   </tr>
                   )
                 )
