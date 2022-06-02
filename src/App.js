@@ -144,7 +144,7 @@ function App() {
               <option value={"Ceiling Fan"}>Ceiling Fan</option>
               <option value={"Fridge"}>Fridge</option>
             </select>
-
+            
 
             
 
@@ -153,12 +153,13 @@ function App() {
               placeholder="watts"
               value={edit.watts}
             />
-
+            <p>W</p>
             <input
               onChange={e=> setEdit({ ...edit, 'hours' :e.target.value})}
               placeholder="hours"
               value={edit.hours}
             />
+            <p>hr</p>
             <button onClick={updateTodo}>update device</button>
             
           </div>
@@ -206,22 +207,31 @@ function App() {
         </p>
         <p>
           {
+            
             devices.map(device =>
             (<div>
-              <p>{device.watts}*{device.hours}={((device.watts*device.hours)/1000)*15}</p>
+              <table>
+                <tbody>
+                  <th>
+                    <td>Number of watts</td>
+                    <td>Number of hours</td>
+                    <td>Amount in Rupees</td>
+                  </th>
+                  <tr>
+                    <td>device.watts</td>
+                    <td>device.hours</td>
+                    <td>((device.watts*device.hours)/1000)*15</td>
+                  </tr>
+                </tbody>
+              </table>
+              
               
               </div>)
               
             )
           }
           
-        </p>
-
-        
-
-        
-        
-      
+        </p>       
     </div>
   );
 }
