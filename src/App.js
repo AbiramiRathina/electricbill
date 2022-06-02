@@ -81,7 +81,7 @@ function App() {
   
     async function count()
     {
-      totval=0;
+      const totval=0;
 
       for (var i=0; i<wattandhours.length ;i++)
       {
@@ -92,7 +92,7 @@ function App() {
       // const wattVal=(apiData.data.listTodos.items[1]);
       // const hourVal=(apiData.data.listTodos.items[2]);
       // const name='df';
-      // alert("d",name);
+       alert("d");
     }
   
 
@@ -225,7 +225,7 @@ function App() {
         </table>
         <br></br><br></br>
         <h4>Total</h4>
-        <p>{() => count()}</p>
+        <p>{count()}</p>
 
         
               
