@@ -198,42 +198,37 @@ function App() {
         </table>
         <br></br><br></br><br></br>
         <h4>Bill</h4>
-        <p>
-          {bill.map((temp,i) =>
-          {
-            return (<p key={i}>
-                {i+1}.{temp}
-              </p>);
-          }
-          )}
-        </p>
-        <p>
-          {
-            
-            devices.map(device =>
-            (<div>
-              <table>
-                <tbody>
-                  <th>
-                    <td>Number of watts</td>
-                    <td>Number of hours</td>
-                    <td>Amount in Rupees</td>
-                  </th>
-                  <tr>
+        
+
+
+        <table>
+          
+          <tbody>
+          <tr>
+              <th>Number of watts</th>
+              <th>Number of hours</th>
+              <th>Amount in Rupees</th>
+            </tr>
+            {
+              devices.map(device =>
+                (<tr key={devices.device}>
                     <td>{device.watts}</td>
                     <td>{device.hours}</td>
                     <td>{((device.watts*device.hours)/1000)*15}</td>
                   </tr>
-                </tbody>
-              </table>
-              <p>{device.watts}*{device.hours}={((device.watts*device.hours)/1000)*15}</p>
-              <p>{() => count()}</p>
-              </div>)
+                  )
+                )
+  
+            
+            }
+          </tbody>
+        </table>
+        <br></br><br></br>
+        <h4>Total</h4>
+        <p>{() => count()}</p>
+
+        
               
-            )
-          }
-          
-        </p>       
     </div>
   );
 }
