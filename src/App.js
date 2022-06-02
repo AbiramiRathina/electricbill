@@ -133,11 +133,20 @@ function App() {
         ) : (
 
           <div>
-            <input
-              onChange={e=> setEdit({ ...edit, 'deviceName' :e.target.value})}
-              placeholder="Device Name"
-              value={edit.deviceName}
-            />
+
+            <select onChange={e=> setEdit({ ...edit, 'deviceName' :e.target.value})}
+              placeholder="select appliance"
+              value={edit.deviceName}>
+              <option value={""}></option>
+              <option value={"light bulb"}>light bulb</option>
+              <option value={"TV"}>TV</option>
+              <option value={"Air cooler"}>Air cooler</option>
+              <option value={"Ceiling Fan"}>Ceiling Fan</option>
+              <option value={"Fridge"}>Fridge</option>
+            </select>
+
+
+            
 
             <input
               onChange={e=> setEdit({ ...edit, 'watts' :e.target.value})}
@@ -150,7 +159,7 @@ function App() {
               placeholder="hours"
               value={edit.hours}
             />
-
+            <button onClick={updateTodo}>update device</button>
             
           </div>
 
@@ -173,8 +182,9 @@ function App() {
                     <td>{device.watts}</td>
                     <td>{device.hours}</td>
                     
+                    <button onClick={() => displayTodo(device)}>update</button>
                     <button onClick={() => deleteTodo(device)}>Remove</button>
-                    <button onClick={updateTodo}>update device</button>
+                    
                   </tr>
                   )
                 )
