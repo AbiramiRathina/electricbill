@@ -224,8 +224,7 @@ function App() {
           </tbody>
         </table>
         <br></br><br></br>
-        <h4>Total</h4>
-        <p>{count()}</p>
+       
 
         
               
