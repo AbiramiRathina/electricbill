@@ -79,18 +79,20 @@ function App() {
   
   
   
-    async function comp()
+    async function count()
     {
       totval=0;
-      wattVal.map(wattVals =>
-        (totval+=wattVals.watts)
-          
-        )
+
+      for (var i=0; i<wattandhours.length ;i++)
+      {
+        totval=totval+wattandhours[i]
+      }
+      return totval;
       // const apiData = await API.graphql(graphqlOperation(listTodos));
       // const wattVal=(apiData.data.listTodos.items[1]);
       // const hourVal=(apiData.data.listTodos.items[2]);
-      const name='df';
-      alert("d",name);
+      // const name='df';
+      // alert("d",name);
     }
   
 
@@ -218,14 +220,14 @@ function App() {
                     <td>Amount in Rupees</td>
                   </th>
                   <tr>
-                    <td>device.watts</td>
-                    <td>device.hours</td>
-                    <td>((device.watts*device.hours)/1000)*15</td>
+                    <td>{device.watts}</td>
+                    <td>{device.hours}</td>
+                    <td>{((device.watts*device.hours)/1000)*15}</td>
                   </tr>
                 </tbody>
               </table>
-              
-              
+              <p>{device.watts}*{device.hours}={((device.watts*device.hours)/1000)*15}</p>
+              <p>{() => count()}</p>
               </div>)
               
             )
