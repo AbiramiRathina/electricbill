@@ -1,3 +1,18 @@
+# Abstract
+A full-stack web application built with React, utilizing GraphQL for backend support. Users can add, remove, or update appliances, and the application automatically calculates and displays the corresponding bill. This setup provides a seamless user experience for managing appliance costs efficiently.
+
+# justification for services and technologies used
+
+•	Amplify is used to develop and deploy the react application using git repository . 
+•	The Amplify CLI allows you to create, manage, and remove AWS services directly from your terminal.
+•	Amplify provides a Git-based CI/CD workflow for building, deploying, and hosting single page web applications or static sites with serverless backends. 
+•	Upon connecting to a Git repository, Amplify determines the build settings for both the front-end framework and any serverless backend resources configured with the Amplify CLI, and automatically deploys updates with every code commit.
+•	Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance.
+•	GraphQL API that leverages AWS AppSync (a managed GraphQL service) which is backed by Amazon DynamoDB (a NoSQL database).
+•	React js is used to develop the web application 
+•	GraphQL – A query language and server-side API implementation based on a typed representation of the application. 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
