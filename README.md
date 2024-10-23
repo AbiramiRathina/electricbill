@@ -1,7 +1,7 @@
 # Abstract
 A full-stack web application built with React, utilizing GraphQL for backend support. Users can add, remove, or update appliances, and the application automatically calculates and displays the corresponding bill. This setup provides a seamless user experience for managing appliance costs efficiently.
 
-# justification for services and technologies used
+# Justification for services and technologies used
 
 •	Amplify is used to develop and deploy the react application using git repository . 
 •	The Amplify CLI allows you to create, manage, and remove AWS services directly from your terminal.
